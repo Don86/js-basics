@@ -4,18 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 
 <body>
-    <h1>Hello world</h1>
-    <!-- put script element here at the end of <body> 
-        because the browser reads JS script from top to bottom 
-    -->
-    <script>
-        // single line comment
-        console.log("Hello world");
-    </script>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <!-- create div containers 
+        classes: 'score-board' and 'badge'
+        The same styels will be applied to the same class
+        in this case, 'badge'
+    --> 
+    <div class="score-board">
+        <div id="user-label" class="badge">user</div>
+        <div id="comp-label" class="badge">comp</div>
+        <span id='user-score'>0</span>: 
+        <span id='comp-score'>0</span>
+    </div>
+
+    <div class="result">
+        <p>Paper smooshes rock. You win!</p>
+    </div>
+
+    <!-- Define choices classes-->
+    <div class="choices">
+        <div class="choice" id="roc">
+            <img src="assets/img_rock.png" alt="rock">
+        </div>
+        <div class="choice" id="pap">
+            <img src="assets/img_paper.png" alt="rock">
+        </div>
+        <div class="choice" id="sci">
+            <img src="assets/img_scissors.png" alt="rock">
+        </div>
+    </div>
+
+    <p id="action-message">Make Yo Move</p>
 </body>
 </html>
