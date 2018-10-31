@@ -1,4 +1,4 @@
-/* Embed an import link from fonts.google.com. Magic! */
+/* To import a font, embed an import link from fonts.google.com. Magic! */
 @import <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet">;
 
 * {
@@ -38,20 +38,25 @@ body {
 .badge {
     background: #E2584D;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     padding: 2px 10px;
     font-family: Asap, sans-serif;
 }
 
+.score-num {
+    color: white;
+    font-size: 40px;
+}
+
 #user-label {
     position: absolute;
-    top: 30px;
-    left: -20px;
+    top: 25px;
+    left: -30px;
 }
 
 #comp-label {
     position: absolute;
-    top: 30px;
+    top: 25px;
     right: -30px;
 }
 
