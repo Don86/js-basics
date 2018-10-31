@@ -76,6 +76,8 @@ body {
     height: 10%;
 }
 
+/*`transition: all 0.2s ease` causes the red bg on hover to not come 
+appear instantaneously*/
 .choice {
     border: 4px solid white;
     border-radius: 50%;
@@ -85,6 +87,7 @@ body {
     transition: all 0.2s ease;
 }
 
+/*Define hover cursor and bg colour*/
 .choice:hover{
     cursor: pointer;
     background: red;
